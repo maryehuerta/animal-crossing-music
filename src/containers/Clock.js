@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactAudioPlayer from 'react-audio-player';
 
 export default class Clock extends Component {
 	constructor(props) {
@@ -19,9 +20,14 @@ export default class Clock extends Component {
 	
 	render() {
 		return(
-			<div className="Clock">
+			<div>
 				{this.state.time}
+				<ReactAudioPlayer
+					src="../images/George_Gershwin_playing_Rhapsody_in_Blue"
+					autoPlay
+					controls />
 			</div>
+			
 		);
 	}
 }
