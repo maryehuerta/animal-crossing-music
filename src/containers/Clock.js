@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import ReactAudioPlayer from 'react-audio-player';
-
+import Audio from 'react-audioplayer';
 export default class Clock extends Component {
 	constructor(props) {
 		super(props);
@@ -22,10 +21,11 @@ export default class Clock extends Component {
 		return(
 			<div>
 				{this.state.time}
-				<ReactAudioPlayer
-					src="../images/George_Gershwin_playing_Rhapsody_in_Blue"
-					autoPlay
-					controls />
+				
+				<iframe border="0" width="0" height="0" src="http://www.youtube.com/embed/tEWFq1_NVSg?autoplay=1&cc_load_policy=1"
+> 
+				</iframe>
+				
 			</div>
 			
 		);
