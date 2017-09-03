@@ -29,20 +29,42 @@ const YoutubeMusic = [
 ]
 
 export default class Music extends Component {
-	// constructor(){
-	// 	state = {
-	// 		hour: getHours()
-	// 	}
-	// }
+	constructor(props) {
+		super(props);
+    this.state = {
+			time: new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}),
+    };
+	}
+	componentDidMount() {
+    this.intervalID = setInterval( () => this.setTime(), 1000 );
+	}
+	componetWillUnmount(){
+		clearInterval(this.intervalID);
+	}
+	setTime() {
+		this.setState( {time: new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) } );  
+	}
+
+	setHour(){
+		var d = new Date();
+		var n = d.getHours();
+		console.log(n);
+		return n;
+	}
+
+	
 
 	render (){
+		
 		return (
 			<div>
 				<iframe
+					title="AnimalCrossing"
 					width="100"
 					height="100"
-					src={"http://www.youtube.com/embed/" + YoutubeMusic[0].url + "?autoplay=1&cc_load_policy=1"}
+					src={"http://www.youtube.com/embed/" + YoutubeMusic[this.setHour()].url + "?autoplay=1&cc_load_policy=1"}
 				/> 
+				{this.setHour()}
 			</div>
 			
 		);
