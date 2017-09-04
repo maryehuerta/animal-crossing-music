@@ -3,13 +3,14 @@ import logo from '../images/logo.svg';
 import './App.css';
 import Clock from '../containers/Clock';
 import Music from '../components/music';
-
+import Background from '../components/backgrounds'
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Clock/>
-        <Music/>
+      <div className="sky">
+        <Background />
+        <Clock />
+        <Music />
       </div>
     );
   }

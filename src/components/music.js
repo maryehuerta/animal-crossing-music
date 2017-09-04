@@ -48,23 +48,18 @@ export default class Music extends Component {
 	setHour(){
 		var d = new Date();
 		var n = d.getHours();
-		console.log(n);
 		return n;
 	}
 
-	
-
 	render (){
-		
 		return (
 			<div>
 				<iframe
 					title="AnimalCrossing"
-					width="100"
-					height="100"
+					width="0"
+					height="0"
 					src={"http://www.youtube.com/embed/" + YoutubeMusic[this.setHour()].url + "?autoplay=1&cc_load_policy=1"}
 				/> 
-				{this.setHour()}
 			</div>
 			
 		);
