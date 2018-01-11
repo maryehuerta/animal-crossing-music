@@ -6,7 +6,8 @@
   font-family: myFirstFont;
   font-size: 100px;
   color: rgb(226,192,80);
-  text-shadow: 2px 2px rgb(98, 78, 48);
+	text-shadow: 2px 2px rgb(98, 78, 48);
+	z-index: -1;
 }
 body {
 
@@ -46,31 +47,25 @@ img {
   height: 100%;
 }
 
-.trees {
-  display: flex;
-  justify-content: space-between;
-  align-content: flex-end;
-  position:fixed;
-  left:0px;
-  bottom:1%;
+.globe-div {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
 }
 
-.mediumtree {
-   padding-top: 10%;
-   width: 10%;
-   height: 50%;
-}
-
-.smalltree {
-  padding-top: 15%;
-  width: 5%;
-  height: 25;
+.globe {
+	padding-top: 100px;
+	height: 200vh;
+	width: 200vh;
+	z-index: -1;
+	position: absolute;
 }
 
 .sign {
   display: flex;
   justify-content: center;
-  margin-top: 1%;
+	margin-top: 1%;
+	z-index: 1;
 }
 
 .logoImg {
@@ -85,20 +80,17 @@ img {
 .clock {
   display: flex;
   justify-content: center;
-  
+  z-index: 2
 }
-
-/*Lets start with the cloud formation rather*/
-
-/*The container will also serve as the SKY*/
 
 *{ margin: 0; padding: 0;}
 
 
 #clouds{
-  z-index:-1;
+  z-index: -1;
   position: absolute;
 	padding: 100px 0;
+
 	
 }
 

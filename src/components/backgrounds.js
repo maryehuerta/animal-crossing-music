@@ -13,14 +13,8 @@ export default class Background extends Component {
           <div className="cloud x5"></div>
         </div>
         <div className="sign"> <img className="logoImg" src={require("../images/Animal_Crossing_Logo.png")}  alt="sign"/> </div>
-        <div className="ground"> </div>
-        <div className="trees"> 
-          <img className="mediumtree" src={require("../images/cedar.png")} alt="tree" />
-          <img src={require("../images/cedar.png")} alt="tree" />
-          <img className="smalltree" src={require("../images/cedar.png")}  alt="tree"/>
-          <img className="mediumtree" src={require("../images/cedar.png")}  alt="tree"/>
-          <img className="smalltree" src={require("../images/cedar.png")}  alt="tree"/>
-          <img src={require("../images/cedar.png")}  alt="tree"/>
+        <div className="globe-div">
+          <img className="globe" src={require("../images/GlobeAnimalCrosssingMusic.png")} alt="globe"  />
         </div>
       </div>
     );
