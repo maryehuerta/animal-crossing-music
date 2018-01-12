@@ -89,9 +89,7 @@ img {
 #clouds{
   z-index: -1;
   position: absolute;
-	padding: 100px 0;
-
-	
+	padding: 200px 0;
 }
 
 /*Time to finalise the cloud shape*/

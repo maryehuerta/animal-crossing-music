@@ -58,7 +58,7 @@ export default class Music extends Component {
 					title="AnimalCrossing"
 					width="0"
 					height="0"
-					src={"http://www.youtube.com/embed/" + YoutubeMusic[this.setHour()].url + "?autoplay=1&cc_load_policy=1"}
+					src={"http://www.youtube.com/embed/" + YoutubeMusic[this.setHour()].url + "?autoplay=1&cc_load_policy=1&mute=0"}
 				/> 
 			</div>
 			
