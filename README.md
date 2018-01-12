@@ -1,13 +1,11 @@
 # Animal Crossing Music
 
 ## Background 
-***
 Music web-app that plays 24 hour *Animal Crossing New Leaf* music. Each hour there is a different song played corresponding to the song being played in that hour of Animal Crossing.
 
 This was create for me to learn more about React and understand css more. Definately not complete but I'll add on every once in a while.
 
 ## History 
-***
 ### Janurary 2018 
 * New Earth! Created with Affinity Designer 🌏
 * Characters and Bugs added 🐶 🐛
