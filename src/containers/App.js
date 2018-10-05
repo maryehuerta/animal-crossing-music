@@ -9,7 +9,7 @@ class App extends Component {
       <div className="sky">
         <Background />
         <Clock />
-        <Music />
+        {/* <Music /> */}
       </div>
     );
   }
